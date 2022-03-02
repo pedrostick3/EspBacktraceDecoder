@@ -1,0 +1,12 @@
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+Core 0 register dump:
+PC      : 0x400e271a  PS      : 0x00060430  A0      : 0x800de7ca  A1      : 0x3ffd03e0  
+A2      : 0x00000110  A3      : 0x3ffd0424  A4      : 0x3ffc48dc  A5      : 0x3ffe891a  
+A6      : 0x3ffef488  A7      : 0x00000000  A8      : 0x3ffd0435  A9      : 0x3ffd03d0  
+A10     : 0x3ffd042c  A11     : 0x3f401ce5  A12     : 0x3f401cee  A13     : 0x0000ff00  
+A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x00000008  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x0000014c  LBEG    : 0x4000c349  LEND    : 0x4000c36b  LCOUNT  : 0xffffffff  
+
+ELF file SHA256: 0000000000000000
+
+Backtrace: 0x400e271a:0x3ffd03e0 0x400de7c7:0x3ffd0420 0x400da136:0x3ffd0460 0x400de97d:0x3ffd04b0 0x400e32c5:0x3ffd0760 0x400e1745:0x3ffd0780 0x400e1b89:0x3ffd07d0 0x400e1146:0x3ffd07f0 0x400df8c1:0x3ffd0850 0x40106375:0x3ffd0870 0x400fe02e:0x3ffd08b0 0x40090afe:0x3ffd08e0

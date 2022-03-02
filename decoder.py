@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-"""ESP Exception Decoder
+"""ESP Backtrace Decoder
 
-github:  https://github.com/janLo/EspArduinoExceptionDecoder
+github:  https://github.com/pedrostick3/EspBacktraceDecoder
 license: GPL v3
-author:  Jan Losinski
+author:  Pedro Dionísio
 """
 
 import argparse
@@ -277,10 +277,11 @@ def parse_args():
     parser = argparse.ArgumentParser(description="decode ESP Stacktraces.")
 
     parser.add_argument("-p", "--platform", help="The platform to decode from", choices=PLATFORMS.keys(),
-                        default="ESP8266")
+                        default="ESP32")
     parser.add_argument("-t", "--tool", help="Path to the xtensa toolchain",
-                        default="~/.platformio/packages/toolchain-xtensa/")
-    parser.add_argument("-e", "--elf", help="path to elf file", required=True)
+                        default="~/.platformio/packages/toolchain-xtensa32/")
+    parser.add_argument("-e", "--elf", help="path to elf file",
+                        default=".pio/build/esp32dev/firmware.elf")
     parser.add_argument("-f", "--full", help="Print full stack dump", action="store_true")
     parser.add_argument("-s", "--stack_only", help="Decode only a stractrace", action="store_true")
     parser.add_argument("file", help="The file to read the exception data from ('-' for STDIN)", default="-")
