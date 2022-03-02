@@ -59,6 +59,7 @@ Backtrace: 0x400e271a:0x3ffd03e0 0x400de7c7:0x3ffd0420 0x400da136:0x3ffd0460 0x4
 ```
 
 You can dump it in a file called `backtrace.txt` and run the `decode.py` script:
+
 (don't forget to replace the `<...>` with your file path)
 
 ```
